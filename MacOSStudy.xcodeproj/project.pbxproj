@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		54E348972547FEB8005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348962547FEB8005E64E7 /* main.c */; };
 		54E348A02547FEE7005E64E7 /* s_vm_inherit.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E3489F2547FEE7005E64E7 /* s_vm_inherit.c */; };
+		54E348A6254808CC005E64E7 /* s_vm_protection.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348A5254808CC005E64E7 /* s_vm_protection.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +29,9 @@
 		54E348962547FEB8005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		54E3489E2547FEE7005E64E7 /* s_vm_inherit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_vm_inherit.h; sourceTree = "<group>"; };
 		54E3489F2547FEE7005E64E7 /* s_vm_inherit.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_vm_inherit.c; sourceTree = "<group>"; };
+		54E348A4254808CC005E64E7 /* s_vm_protection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_vm_protection.h; sourceTree = "<group>"; };
+		54E348A5254808CC005E64E7 /* s_vm_protection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_vm_protection.c; sourceTree = "<group>"; };
+		54E348A8254808E6005E64E7 /* s_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_common.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +67,9 @@
 				54E348962547FEB8005E64E7 /* main.c */,
 				54E3489E2547FEE7005E64E7 /* s_vm_inherit.h */,
 				54E3489F2547FEE7005E64E7 /* s_vm_inherit.c */,
+				54E348A4254808CC005E64E7 /* s_vm_protection.h */,
+				54E348A5254808CC005E64E7 /* s_vm_protection.c */,
+				54E348A8254808E6005E64E7 /* s_common.h */,
 			);
 			path = MacOSStudy;
 			sourceTree = "<group>";
@@ -123,6 +130,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E348A6254808CC005E64E7 /* s_vm_protection.c in Sources */,
 				54E348A02547FEE7005E64E7 /* s_vm_inherit.c in Sources */,
 				54E348972547FEB8005E64E7 /* main.c in Sources */,
 			);

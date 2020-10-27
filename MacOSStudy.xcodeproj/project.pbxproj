@@ -12,6 +12,8 @@
 		54E348A6254808CC005E64E7 /* s_vm_protection.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348A5254808CC005E64E7 /* s_vm_protection.c */; };
 		54E348C325481830005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348C225481830005E64E7 /* main.c */; };
 		54E348D025481850005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348CF25481850005E64E7 /* main.c */; };
+		54E348EC2548422A005E64E7 /* s_shm_ipc_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348EB2548422A005E64E7 /* s_shm_ipc_client.c */; };
+		54E348FB2548423F005E64E7 /* s_shm_ipc_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -42,6 +44,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		54E348E72548422A005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		54E348F62548423E005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +76,11 @@
 		54E348C225481830005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 		54E348CD25481850005E64E7 /* VMAccessMaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VMAccessMaster; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E348CF25481850005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		54E348E92548422A005E64E7 /* ShareMemeoryIPCClient */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShareMemeoryIPCClient; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E348EB2548422A005E64E7 /* s_shm_ipc_client.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_shm_ipc_client.c; sourceTree = "<group>"; };
+		54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShareMemeoryIPCServer; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_shm_ipc_server.c; sourceTree = "<group>"; };
+		54E3490425484270005E64E7 /* s_shm_ipc_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_shm_ipc_header.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +105,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54E348E62548422A005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348F52548423E005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -90,6 +129,8 @@
 				54E348952547FEB8005E64E7 /* MacOSStudy */,
 				54E348C125481830005E64E7 /* VMAccessTarget */,
 				54E348CE25481850005E64E7 /* VMAccessMaster */,
+				54E348EA2548422A005E64E7 /* ShareMemeoryIPCClient */,
+				54E348F92548423F005E64E7 /* ShareMemeoryIPCServer */,
 				54E348942547FEB8005E64E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -100,6 +141,8 @@
 				54E348932547FEB8005E64E7 /* MacOSStudy */,
 				54E348C025481830005E64E7 /* VMAccessTarget */,
 				54E348CD25481850005E64E7 /* VMAccessMaster */,
+				54E348E92548422A005E64E7 /* ShareMemeoryIPCClient */,
+				54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -136,8 +179,25 @@
 			isa = PBXGroup;
 			children = (
 				54E348A8254808E6005E64E7 /* s_common.h */,
+				54E3490425484270005E64E7 /* s_shm_ipc_header.h */,
 			);
 			path = Common;
+			sourceTree = "<group>";
+		};
+		54E348EA2548422A005E64E7 /* ShareMemeoryIPCClient */ = {
+			isa = PBXGroup;
+			children = (
+				54E348EB2548422A005E64E7 /* s_shm_ipc_client.c */,
+			);
+			path = ShareMemeoryIPCClient;
+			sourceTree = "<group>";
+		};
+		54E348F92548423F005E64E7 /* ShareMemeoryIPCServer */ = {
+			isa = PBXGroup;
+			children = (
+				54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */,
+			);
+			path = ShareMemeoryIPCServer;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -194,6 +254,40 @@
 			productReference = 54E348CD25481850005E64E7 /* VMAccessMaster */;
 			productType = "com.apple.product-type.tool";
 		};
+		54E348E82548422A005E64E7 /* ShareMemeoryIPCClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E348ED2548422A005E64E7 /* Build configuration list for PBXNativeTarget "ShareMemeoryIPCClient" */;
+			buildPhases = (
+				54E348E52548422A005E64E7 /* Sources */,
+				54E348E62548422A005E64E7 /* Frameworks */,
+				54E348E72548422A005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareMemeoryIPCClient;
+			productName = ShareMemeoryIPCClient;
+			productReference = 54E348E92548422A005E64E7 /* ShareMemeoryIPCClient */;
+			productType = "com.apple.product-type.tool";
+		};
+		54E348F72548423E005E64E7 /* ShareMemeoryIPCServer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E348FC2548423F005E64E7 /* Build configuration list for PBXNativeTarget "ShareMemeoryIPCServer" */;
+			buildPhases = (
+				54E348F42548423E005E64E7 /* Sources */,
+				54E348F52548423E005E64E7 /* Frameworks */,
+				54E348F62548423E005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ShareMemeoryIPCServer;
+			productName = ShareMemeoryIPCServer;
+			productReference = 54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -209,6 +303,12 @@
 						CreatedOnToolsVersion = 12.0;
 					};
 					54E348CC25481850005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					54E348E82548422A005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					54E348F72548423E005E64E7 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -229,6 +329,8 @@
 				54E348922547FEB8005E64E7 /* MacOSStudy */,
 				54E348BF25481830005E64E7 /* VMAccessTarget */,
 				54E348CC25481850005E64E7 /* VMAccessMaster */,
+				54E348E82548422A005E64E7 /* ShareMemeoryIPCClient */,
+				54E348F72548423E005E64E7 /* ShareMemeoryIPCServer */,
 			);
 		};
 /* End PBXProject section */
@@ -257,6 +359,22 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E348D025481850005E64E7 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348E52548422A005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E348EC2548422A005E64E7 /* s_shm_ipc_client.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348F42548423E005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E348FB2548423F005E64E7 /* s_shm_ipc_server.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -436,6 +554,46 @@
 			};
 			name = Release;
 		};
+		54E348EE2548422A005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E348EF2548422A005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54E348FD2548423F005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E348FE2548423F005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -471,6 +629,24 @@
 			buildConfigurations = (
 				54E348D225481850005E64E7 /* Debug */,
 				54E348D325481850005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E348ED2548422A005E64E7 /* Build configuration list for PBXNativeTarget "ShareMemeoryIPCClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E348EE2548422A005E64E7 /* Debug */,
+				54E348EF2548422A005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E348FC2548423F005E64E7 /* Build configuration list for PBXNativeTarget "ShareMemeoryIPCServer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E348FD2548423F005E64E7 /* Debug */,
+				54E348FE2548423F005E64E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

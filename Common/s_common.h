@@ -18,6 +18,9 @@
 #define OUT_ON_MACH_ERROR(msg, retval) \
 if (kr != KERN_SUCCESS) { mach_error(msg ":", kr); goto out; }
 
+#define EXIT_ON_MACH_ERROR(msg, retval) \
+if (kr != KERN_SUCCESS) { mach_error(msg ":", kr); exit(retval); }
+
 #define FIRST_UINT32(addr) (*((uint32_t *)addr))
 
 #endif /* s_common_h */

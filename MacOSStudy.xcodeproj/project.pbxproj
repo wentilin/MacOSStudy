@@ -10,10 +10,30 @@
 		54E348972547FEB8005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348962547FEB8005E64E7 /* main.c */; };
 		54E348A02547FEE7005E64E7 /* s_vm_inherit.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E3489F2547FEE7005E64E7 /* s_vm_inherit.c */; };
 		54E348A6254808CC005E64E7 /* s_vm_protection.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348A5254808CC005E64E7 /* s_vm_protection.c */; };
+		54E348C325481830005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348C225481830005E64E7 /* main.c */; };
+		54E348D025481850005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348CF25481850005E64E7 /* main.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
 		54E348912547FEB8005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		54E348BE25481830005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		54E348CB25481850005E64E7 /* CopyFiles */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
@@ -32,10 +52,28 @@
 		54E348A4254808CC005E64E7 /* s_vm_protection.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_vm_protection.h; sourceTree = "<group>"; };
 		54E348A5254808CC005E64E7 /* s_vm_protection.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_vm_protection.c; sourceTree = "<group>"; };
 		54E348A8254808E6005E64E7 /* s_common.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_common.h; sourceTree = "<group>"; };
+		54E348C025481830005E64E7 /* VMAccessTarget */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VMAccessTarget; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E348C225481830005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		54E348CD25481850005E64E7 /* VMAccessMaster */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = VMAccessMaster; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E348CF25481850005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		54E348902547FEB8005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348BD25481830005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348CA25481850005E64E7 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -48,7 +86,10 @@
 		54E3488A2547FEB8005E64E7 = {
 			isa = PBXGroup;
 			children = (
+				54E348D72548188E005E64E7 /* Common */,
 				54E348952547FEB8005E64E7 /* MacOSStudy */,
+				54E348C125481830005E64E7 /* VMAccessTarget */,
+				54E348CE25481850005E64E7 /* VMAccessMaster */,
 				54E348942547FEB8005E64E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -57,6 +98,8 @@
 			isa = PBXGroup;
 			children = (
 				54E348932547FEB8005E64E7 /* MacOSStudy */,
+				54E348C025481830005E64E7 /* VMAccessTarget */,
+				54E348CD25481850005E64E7 /* VMAccessMaster */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -69,9 +112,32 @@
 				54E3489F2547FEE7005E64E7 /* s_vm_inherit.c */,
 				54E348A4254808CC005E64E7 /* s_vm_protection.h */,
 				54E348A5254808CC005E64E7 /* s_vm_protection.c */,
-				54E348A8254808E6005E64E7 /* s_common.h */,
 			);
 			path = MacOSStudy;
+			sourceTree = "<group>";
+		};
+		54E348C125481830005E64E7 /* VMAccessTarget */ = {
+			isa = PBXGroup;
+			children = (
+				54E348C225481830005E64E7 /* main.c */,
+			);
+			path = VMAccessTarget;
+			sourceTree = "<group>";
+		};
+		54E348CE25481850005E64E7 /* VMAccessMaster */ = {
+			isa = PBXGroup;
+			children = (
+				54E348CF25481850005E64E7 /* main.c */,
+			);
+			path = VMAccessMaster;
+			sourceTree = "<group>";
+		};
+		54E348D72548188E005E64E7 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				54E348A8254808E6005E64E7 /* s_common.h */,
+			);
+			path = Common;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -94,6 +160,40 @@
 			productReference = 54E348932547FEB8005E64E7 /* MacOSStudy */;
 			productType = "com.apple.product-type.tool";
 		};
+		54E348BF25481830005E64E7 /* VMAccessTarget */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E348C425481830005E64E7 /* Build configuration list for PBXNativeTarget "VMAccessTarget" */;
+			buildPhases = (
+				54E348BC25481830005E64E7 /* Sources */,
+				54E348BD25481830005E64E7 /* Frameworks */,
+				54E348BE25481830005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMAccessTarget;
+			productName = VMAccessTarget;
+			productReference = 54E348C025481830005E64E7 /* VMAccessTarget */;
+			productType = "com.apple.product-type.tool";
+		};
+		54E348CC25481850005E64E7 /* VMAccessMaster */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E348D125481850005E64E7 /* Build configuration list for PBXNativeTarget "VMAccessMaster" */;
+			buildPhases = (
+				54E348C925481850005E64E7 /* Sources */,
+				54E348CA25481850005E64E7 /* Frameworks */,
+				54E348CB25481850005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = VMAccessMaster;
+			productName = VMAccessMaster;
+			productReference = 54E348CD25481850005E64E7 /* VMAccessMaster */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -103,6 +203,12 @@
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					54E348922547FEB8005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					54E348BF25481830005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					54E348CC25481850005E64E7 = {
 						CreatedOnToolsVersion = 12.0;
 					};
 				};
@@ -121,6 +227,8 @@
 			projectRoot = "";
 			targets = (
 				54E348922547FEB8005E64E7 /* MacOSStudy */,
+				54E348BF25481830005E64E7 /* VMAccessTarget */,
+				54E348CC25481850005E64E7 /* VMAccessMaster */,
 			);
 		};
 /* End PBXProject section */
@@ -133,6 +241,22 @@
 				54E348A6254808CC005E64E7 /* s_vm_protection.c in Sources */,
 				54E348A02547FEE7005E64E7 /* s_vm_inherit.c in Sources */,
 				54E348972547FEB8005E64E7 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348BC25481830005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E348C325481830005E64E7 /* main.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E348C925481850005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E348D025481850005E64E7 /* main.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,6 +394,48 @@
 			};
 			name = Release;
 		};
+		54E348C525481830005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E348C625481830005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_ENTITLEMENTS = "";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54E348D225481850005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E348D325481850005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -287,6 +453,24 @@
 			buildConfigurations = (
 				54E3489B2547FEB8005E64E7 /* Debug */,
 				54E3489C2547FEB8005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E348C425481830005E64E7 /* Build configuration list for PBXNativeTarget "VMAccessTarget" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E348C525481830005E64E7 /* Debug */,
+				54E348C625481830005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E348D125481850005E64E7 /* Build configuration list for PBXNativeTarget "VMAccessMaster" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E348D225481850005E64E7 /* Debug */,
+				54E348D325481850005E64E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

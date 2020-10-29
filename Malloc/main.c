@@ -11,6 +11,7 @@
 
 #include "s_malloc_enumerate.h"
 #include "s_scalable_zone_statistics.h"
+#include "s_malloc_intercept.h"
 
 int main(int argc, const char * argv[]) {
     unsigned long long size;
@@ -20,7 +21,8 @@ int main(int argc, const char * argv[]) {
     }
     
 //    enumerate_zone(size);
-    enumerate_statistics(size);
+//    enumerate_statistics(size);
+    malloc_intercept_run();
     
     return 0;
 }

@@ -17,6 +17,7 @@
 		54E3494725499366005E64E7 /* s_malloc_enumerate.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E3494625499366005E64E7 /* s_malloc_enumerate.c */; };
 		54E34962254A5ED2005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E34961254A5ED2005E64E7 /* main.c */; };
 		54E34974254A6098005E64E7 /* s_scalable_zone_statistics.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */; };
+		54E34985254AA078005E64E7 /* s_malloc_intercept.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E34984254AA078005E64E7 /* s_malloc_intercept.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -110,6 +111,8 @@
 		54E3496A254A5EEA005E64E7 /* s_malloc_enumerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_malloc_enumerate.h; sourceTree = "<group>"; };
 		54E34972254A6098005E64E7 /* s_scalable_zone_statistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_scalable_zone_statistics.h; sourceTree = "<group>"; };
 		54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_scalable_zone_statistics.c; sourceTree = "<group>"; };
+		54E34983254AA078005E64E7 /* s_malloc_intercept.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_malloc_intercept.h; sourceTree = "<group>"; };
+		54E34984254AA078005E64E7 /* s_malloc_intercept.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_malloc_intercept.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -255,6 +258,8 @@
 				54E34972254A6098005E64E7 /* s_scalable_zone_statistics.h */,
 				54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */,
 				54E34961254A5ED2005E64E7 /* main.c */,
+				54E34983254AA078005E64E7 /* s_malloc_intercept.h */,
+				54E34984254AA078005E64E7 /* s_malloc_intercept.c */,
 			);
 			path = Malloc;
 			sourceTree = "<group>";
@@ -490,6 +495,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54E34985254AA078005E64E7 /* s_malloc_intercept.c in Sources */,
 				54E34962254A5ED2005E64E7 /* main.c in Sources */,
 				54E34974254A6098005E64E7 /* s_scalable_zone_statistics.c in Sources */,
 				54E3494725499366005E64E7 /* s_malloc_enumerate.c in Sources */,

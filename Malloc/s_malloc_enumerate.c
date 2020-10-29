@@ -1,5 +1,5 @@
 //
-//  main.c
+//  s_malloc_enumerate.c
 //  Malloc
 //
 //  Created by linwenhu on 2020/10/28.
@@ -8,20 +8,11 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <unistd.h>
-#include <limits.h>
 #include <malloc/malloc.h>
 #include <mach/mach.h>
 
-#include <stdarg.h>
-
-extern void _simple_vdprintf(int, const char *, va_list);
-
-static inline void nomalloc_printf(const char *format, ...) {
-    va_list ap;
-    va_start(ap, format);
-    _simple_vdprintf(STDOUT_FILENO, format, ap);
-    va_end(ap);
-}
+#include "s_nomalloc_printf.h"
+#include "s_malloc_enumerate.h"
 
 struct recorder_args {
     const char *label;
@@ -39,26 +30,18 @@ void my_vm_range_recorder(task_t task, void *context, unsigned type_mask, vm_ran
     }
 }
 
-int main(int argc, const char * argv[]) {
+void enumerate_zone(unsigned long long size) {
     int i;
     void *ptr = NULL;
-    unsigned long long size;
     malloc_zone_t *zone;
     
     if (!(zone = malloc_default_zone())) {
         exit(1);
     }
     
-    if (argc == 2) {
-        if (size == strtoull(argv[1], NULL, 10) == ULLONG_MAX) {
-            fprintf(stderr, "invalid allocate size (%s)\n", argv[1]);
-            exit(1);
-        }
-        
-        if ((ptr = malloc((size_t)size)) == NULL) {
-            perror("malloc");
-            exit(1);
-        }
+    if ((ptr = malloc((size_t)size)) == NULL) {
+        perror("malloc");
+        exit(1);
     }
     
     for (i = 0; i < sizeof(recorder_args)/sizeof(struct recorder_args); i++) {
@@ -70,6 +53,4 @@ int main(int argc, const char * argv[]) {
                                      NULL,
                                      my_vm_range_recorder);
     }
-    
-    return 0;
 }

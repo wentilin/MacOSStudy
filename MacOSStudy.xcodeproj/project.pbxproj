@@ -14,6 +14,9 @@
 		54E348D025481850005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348CF25481850005E64E7 /* main.c */; };
 		54E348EC2548422A005E64E7 /* s_shm_ipc_client.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348EB2548422A005E64E7 /* s_shm_ipc_client.c */; };
 		54E348FB2548423F005E64E7 /* s_shm_ipc_server.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */; };
+		54E3494725499366005E64E7 /* s_malloc_enumerate.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E3494625499366005E64E7 /* s_malloc_enumerate.c */; };
+		54E34962254A5ED2005E64E7 /* main.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E34961254A5ED2005E64E7 /* main.c */; };
+		54E34974254A6098005E64E7 /* s_scalable_zone_statistics.c in Sources */ = {isa = PBXBuildFile; fileRef = 54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -62,6 +65,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 1;
 		};
+		54E3492B2549932F005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+		54E3494225499366005E64E7 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
@@ -81,6 +102,14 @@
 		54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ShareMemeoryIPCServer; sourceTree = BUILT_PRODUCTS_DIR; };
 		54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_shm_ipc_server.c; sourceTree = "<group>"; };
 		54E3490425484270005E64E7 /* s_shm_ipc_header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_shm_ipc_header.h; sourceTree = "<group>"; };
+		54E3492D2549932F005E64E7 /* s_malloc_enumerate */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = s_malloc_enumerate; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E3494425499366005E64E7 /* Malloc */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Malloc; sourceTree = BUILT_PRODUCTS_DIR; };
+		54E3494625499366005E64E7 /* s_malloc_enumerate.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_malloc_enumerate.c; sourceTree = "<group>"; };
+		54E34959254A5E64005E64E7 /* s_nomalloc_printf.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_nomalloc_printf.h; sourceTree = "<group>"; };
+		54E34961254A5ED2005E64E7 /* main.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = main.c; sourceTree = "<group>"; };
+		54E3496A254A5EEA005E64E7 /* s_malloc_enumerate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_malloc_enumerate.h; sourceTree = "<group>"; };
+		54E34972254A6098005E64E7 /* s_scalable_zone_statistics.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = s_scalable_zone_statistics.h; sourceTree = "<group>"; };
+		54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.c; path = s_scalable_zone_statistics.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +148,20 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		54E3492A2549932F005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E3494125499366005E64E7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -131,6 +174,7 @@
 				54E348CE25481850005E64E7 /* VMAccessMaster */,
 				54E348EA2548422A005E64E7 /* ShareMemeoryIPCClient */,
 				54E348F92548423F005E64E7 /* ShareMemeoryIPCServer */,
+				54E3494525499366005E64E7 /* Malloc */,
 				54E348942547FEB8005E64E7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -143,6 +187,8 @@
 				54E348CD25481850005E64E7 /* VMAccessMaster */,
 				54E348E92548422A005E64E7 /* ShareMemeoryIPCClient */,
 				54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */,
+				54E3492D2549932F005E64E7 /* s_malloc_enumerate */,
+				54E3494425499366005E64E7 /* Malloc */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -180,6 +226,7 @@
 			children = (
 				54E348A8254808E6005E64E7 /* s_common.h */,
 				54E3490425484270005E64E7 /* s_shm_ipc_header.h */,
+				54E34959254A5E64005E64E7 /* s_nomalloc_printf.h */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -198,6 +245,18 @@
 				54E348FA2548423F005E64E7 /* s_shm_ipc_server.c */,
 			);
 			path = ShareMemeoryIPCServer;
+			sourceTree = "<group>";
+		};
+		54E3494525499366005E64E7 /* Malloc */ = {
+			isa = PBXGroup;
+			children = (
+				54E3496A254A5EEA005E64E7 /* s_malloc_enumerate.h */,
+				54E3494625499366005E64E7 /* s_malloc_enumerate.c */,
+				54E34972254A6098005E64E7 /* s_scalable_zone_statistics.h */,
+				54E34973254A6098005E64E7 /* s_scalable_zone_statistics.c */,
+				54E34961254A5ED2005E64E7 /* main.c */,
+			);
+			path = Malloc;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -288,6 +347,40 @@
 			productReference = 54E348F82548423E005E64E7 /* ShareMemeoryIPCServer */;
 			productType = "com.apple.product-type.tool";
 		};
+		54E3492C2549932F005E64E7 /* s_malloc_enumerate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E3493325499330005E64E7 /* Build configuration list for PBXNativeTarget "s_malloc_enumerate" */;
+			buildPhases = (
+				54E349292549932F005E64E7 /* Sources */,
+				54E3492A2549932F005E64E7 /* Frameworks */,
+				54E3492B2549932F005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = s_malloc_enumerate;
+			productName = s_malloc_enumerate;
+			productReference = 54E3492D2549932F005E64E7 /* s_malloc_enumerate */;
+			productType = "com.apple.product-type.tool";
+		};
+		54E3494325499366005E64E7 /* Malloc */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 54E3494825499366005E64E7 /* Build configuration list for PBXNativeTarget "Malloc" */;
+			buildPhases = (
+				54E3494025499366005E64E7 /* Sources */,
+				54E3494125499366005E64E7 /* Frameworks */,
+				54E3494225499366005E64E7 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Malloc;
+			productName = Malloc;
+			productReference = 54E3494425499366005E64E7 /* Malloc */;
+			productType = "com.apple.product-type.tool";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -311,6 +404,12 @@
 					54E348F72548423E005E64E7 = {
 						CreatedOnToolsVersion = 12.0;
 					};
+					54E3492C2549932F005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
+					54E3494325499366005E64E7 = {
+						CreatedOnToolsVersion = 12.0;
+					};
 				};
 			};
 			buildConfigurationList = 54E3488E2547FEB8005E64E7 /* Build configuration list for PBXProject "MacOSStudy" */;
@@ -331,6 +430,8 @@
 				54E348CC25481850005E64E7 /* VMAccessMaster */,
 				54E348E82548422A005E64E7 /* ShareMemeoryIPCClient */,
 				54E348F72548423E005E64E7 /* ShareMemeoryIPCServer */,
+				54E3492C2549932F005E64E7 /* s_malloc_enumerate */,
+				54E3494325499366005E64E7 /* Malloc */,
 			);
 		};
 /* End PBXProject section */
@@ -375,6 +476,23 @@
 			buildActionMask = 2147483647;
 			files = (
 				54E348FB2548423F005E64E7 /* s_shm_ipc_server.c in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E349292549932F005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		54E3494025499366005E64E7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				54E34962254A5ED2005E64E7 /* main.c in Sources */,
+				54E34974254A6098005E64E7 /* s_scalable_zone_statistics.c in Sources */,
+				54E3494725499366005E64E7 /* s_malloc_enumerate.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -594,6 +712,46 @@
 			};
 			name = Release;
 		};
+		54E3493125499330005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E3493225499330005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		54E3494925499366005E64E7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		54E3494A25499366005E64E7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 8VBF894SB3;
+				ENABLE_HARDENED_RUNTIME = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -647,6 +805,24 @@
 			buildConfigurations = (
 				54E348FD2548423F005E64E7 /* Debug */,
 				54E348FE2548423F005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E3493325499330005E64E7 /* Build configuration list for PBXNativeTarget "s_malloc_enumerate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E3493125499330005E64E7 /* Debug */,
+				54E3493225499330005E64E7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		54E3494825499366005E64E7 /* Build configuration list for PBXNativeTarget "Malloc" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				54E3494925499366005E64E7 /* Debug */,
+				54E3494A25499366005E64E7 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
